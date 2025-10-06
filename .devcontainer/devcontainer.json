@@ -1,0 +1,14 @@
+    {
+      "name": "Cypress Development Environment",
+      "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+      "features": {
+        "ghcr.io/devcontainers/features/cypress:1": {}
+      },
+      "customizations": {
+        "vscode": {
+          "extensions": [
+            "cypress.cypress-io-extension"
+          ]
+        }
+      }
+    }
