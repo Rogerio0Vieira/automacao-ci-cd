@@ -1,7 +1,16 @@
 {
-  "name": "Cypress Online Dev",
-  "image": "cypress/base:20.11.0",
+  "name": "Cypress Codespace",
+  "image": "cypress/base:20.11.0", 
+  "forwardPorts": [8080],
+  "postCreateCommand": "npm install",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["cypress.cypress"]
+    }
   }
 }
